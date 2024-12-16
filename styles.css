@@ -20,12 +20,9 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.nav-links.active {
-  display: flex;
-}
 .navbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     position: relative;
     z-index: 1000;
@@ -39,7 +36,7 @@ header {
 
 /* Dropdown Menu */
 .dropdown-menu {
-    position: right;
+    position: relative;
 }
 
 .dropdown-toggle {
@@ -306,9 +303,9 @@ footer {
 }
 
 /* Additional Responsive Styles */
-/* Additional Responsive Styles */
 @media (max-width: 768px) {
     /* Adjust font sizes for better readability on smaller screens */
+    /* Additional Responsive Styles */
     h1 {
         font-size: 2rem;
     }
