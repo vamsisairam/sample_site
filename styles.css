@@ -29,12 +29,9 @@ header {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
+    margin-left: 20px; /* Adjust margin as needed */
 }
 
-/* Dropdown Menu */
 .dropdown-menu {
     position: relative;
 }
@@ -51,20 +48,20 @@ header {
 }
 
 .nav-links {
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links.active {
     display: flex;
-    list-style: none;
-    gap: 20px;
 }
 
-.nav-links li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-.nav-links li a:hover {
-    color: #007bff;
+.nav-links li {
+    margin: 10px 0;
 }
 
 /* Responsive Navbar */
@@ -76,23 +73,6 @@ header {
 
     .dropdown-toggle {
         display: block;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: #fff;
-        padding: 10px;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
     }
 }
 
