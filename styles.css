@@ -39,7 +39,7 @@ header {
 
 /* Dropdown Menu */
 .dropdown-menu {
-    position: relative;
+    position: right;
 }
 
 .dropdown-toggle {
